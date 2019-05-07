@@ -1,0 +1,384 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+body {
+  background-color: #fff;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+* {
+    box-sizing: border-box; }
+
+
+/*NAV*/
+
+.logo {
+  position: fixed;
+  float: left;
+  font-size: 36px;
+  font-family: 'Dancing Script', cursive;
+  color: #eee;
+  top: 0;
+  margin: 4px 0px 0px 60px;
+  font-weight: 600; }
+   
+
+nav {
+  position: fixed;
+  width: 100%; 
+  z-index: 2000; }
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+  padding-top: 0px;
+  max-height: 0px;
+  background: #000; 
+  z-index: 2000; }
+
+nav.black ul {
+  background: #000; }
+
+nav ul li {
+  display: block;
+  font-size: 16px;
+  padding: 24px 0;
+  text-align: center; }
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px; }
+
+nav ul li a:hover {
+  text-decoration: none;
+  border-top: 1px solid #CF0A38;
+  padding-top: 10px;
+  color: #CF0A38; }
+
+.menu-icon {
+  display: block;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff; }
+
+.showing {
+  max-height: 30em; }
+
+/*O nas*/
+.about {
+  width: 90%;
+  margin: 60px auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify; }
+
+.container-fluid p {
+  padding-bottom: 20px; }
+
+.header-section { /*DLA WSZYTSKICH NAGŁÓWKÓW*/
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 4px;
+  color: #830623;
+  z-index: 333; }
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 280px;
+  margin-bottom: 30px; }
+
+.flip-card-inner {
+  position: relative;
+  right: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); }
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); }
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; }
+
+.flip-card-front {
+  background-color: #263B40;
+  z-index: 2; }
+
+.flip-card-back {
+  background-color: #eee;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  padding-top: 100px; } 
+
+.img-us { 
+  height: 280px;
+  width: auto; }
+
+.about-a-a em {
+  color: #830623;
+  margin-top: 3px;
+  font-size: 16px;
+  text-align: center; 
+  padding: 10px; }
+
+/*OFERTA*/
+.oferta_wedding {
+  margin-top: 40px; }
+
+.oferta {
+  text-align: center;
+  padding: 20px;
+  font-weight: 700; }
+    
+.o-paragraf {
+  margin: 10px; }
+
+.we {
+  margin-top: 60px; }
+
+.we p {
+  font-size: 18px; }
+
+/*Gallery*/
+img:hover {
+  opacity: 0.9; }
+
+/*KONTAKT*/
+.contact {
+  margin-top: 60px; 
+  text-align: center; }
+
+#dane {
+  margin:10px auto;
+  width: 260px; }
+
+.btn {
+  background: #830623;
+  width: 100%;
+  margin: 20px auto;
+  color: #eee; }
+
+.btn:hover {
+  color: #fff;
+  background-color: #97354C; }
+
+/*SOCIAL*/
+.social {
+  margin: 10px 0px; }
+    
+.squere {
+  color: white;
+  max-width: 120px;
+  height: 40px;
+  margin: 0px auto; }
+
+.fb {
+  width: 40px;
+  height: inherit;
+  float: left; }
+
+.fb:hover{
+  opacity: 0.6; }
+
+.insta {
+  width: 40px;
+  height: inherit;
+  float: left; }
+
+.icon-instagram, .icon-facebook {
+  color: #830623; }
+
+.insta:hover {
+  opacity: 0.6; }
+
+/*FOOTER*/
+footer p {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px; }
+
+
+
+
+
+/*------------------------------------------------------------------------------------------
+                                          RWD
+------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 360px) and (max-width: 400px) {
+.flip-card {
+  width: 310px;
+  height: 310px; }
+  
+.img-us {
+  height: 310px;
+  width: auto; }
+}
+@media screen and (min-width: 401px) and (max-width: 450px) {
+.flip-card {
+  width: 360px;
+  height: 360px;
+  margin-bottom: 40px; }
+
+.img-us {
+  height: 360px;
+  width: auto; }
+
+.about-a-a em {
+  font-size: 18px;
+  padding-top: 60px; }
+
+.flip-card-back {
+  padding-top: 140px; }
+}
+
+@media screen and (min-width: 450px) and (max-width: 550px) {
+.flip-card {
+  width: 380px;
+  height: 380px;
+  margin: 0px 0px 40px 50px; }
+
+.img-us {
+  height: 380px;
+  width: auto; }
+
+.flip-card-back {
+  padding-top: 140px; }
+}
+
+@media screen and (min-width: 550px) and (max-width: 650px) {
+.flip-card {
+  margin-left: 25%; }
+}
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+.flip-card {
+  margin-left: 28%; }
+
+.btn {
+  width: 20%;
+  margin: 20px auto; }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+.flip-card {
+  margin-left: 28%; }
+
+.btn {
+  width: 20%;
+  margin: 20px auto; }
+}
+
+@media screen and  (min-width: 1000px) and (max-width: 1023px) {
+  .flip-card {
+    margin-left: 35%; }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+/*NAV*/
+.logo {
+  position: fixed;
+  top: 0;
+  margin-top: 16px 32px;
+  color: #fff;
+  font-size: 36px; }
+  
+nav.black ul {
+  background: #000; }
+
+nav ul {
+  max-height: 60px;
+  list-style: none;
+  background: rgba(0,0,0,0);
+  overflow: visible;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+  padding-left: 172px; }
+
+nav ul li {
+  display: inline-block;
+  padding: 20px; }
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px; }
+
+
+.menu-icon {
+  background: transparent !important;
+  display: none; } 
+
+/*o Nas*/
+.flip-card {
+    margin-left: 36%; }
+
+.btn {
+  width: 20%;
+  margin: 20px auto; }
+}
+
+@media screen and (min-width: 1501px){
+nav.black ul {
+  background: #000; }
+
+nav ul {
+  max-height: 60px;
+  list-style: none;
+  background: rgba(0,0,0,0);
+  overflow: visible;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s; }
+
+nav ul li {
+  display: inline-block;
+  padding: 20px; }
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px; }
+
+
+.menu-icon {
+  background: transparent !important;
+  display: none; } 
+
+.about .row {
+  margin-left: 220px;
+    margin-right: 220px; }
+
+.we p {
+  width: 60%;
+  margin: 10px auto; }
+
+.btn {
+  width: 20%;
+  margin: 20px auto; }
+}
